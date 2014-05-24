@@ -2,4 +2,4 @@
 -compile(export_all).
 
 notfound('GET', []) ->
-  {output,"video"}.
+  {ok, [{diag,"404"}]}.
