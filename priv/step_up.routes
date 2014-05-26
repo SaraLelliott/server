@@ -14,7 +14,14 @@
 % Note that routing across applications results in a 302 redirect.
 
 % Front page
-{"/", [{controller, "account"}, {action, "list"}]}.
+{"/", [{controller, "anonymous"}, {action, "main"}]}.
+
+% step-up - SEO "Search Engine Optimzation" 
+{"/main", [{controller, "anonymous"}, {action, "main"}]}.
+{"/quiz", [{controller, "anonymous"}, {action, "quiz"}]}.
+{"/copyright", [{controller, "anonymous"}, {action, "copyright"}]}.
+{"/login", [{controller, "account"}, {action, "login"}]}.
+{"/createaccount", [{controller, "account"}, {action, "create"}]}.
 
 % 404 File Not Found handler
 {404, [{controller, "diagnostic"}, {action, "notfound"}]}.
