@@ -1,0 +1,170 @@
+{% extends "anonymous/generic.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block generic %}
+<div id="feedbackFormModal" class="reveal-modal small" data-reveal>
+	<form id ="feedback" action="submit.html">
+		<fieldset>
+			<legend>Your Details</legend>
+				<ul class="no-bullet">
+					<li>
+						<div class="row">
+							<div class="small-4 large-4 columns">	
+									<label for="nameFirst">First Name:</label>
+							</div>
+							<div class="small-8 large-8 columns">
+									<input id="nameFirst" name="nameFirst" placeholder="First Name" required="" autofocus="" type="text"/>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="small-4 large-4 columns">	
+								<label for="nameLast">Last Name:</label>
+							</div>
+							<div class="small-8 large-8 columns">
+								<input id="nameLast" name="nameLast" placeholder="Last Name" required="" autofocus="" type="text"/>
+							</div>	
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="small-4 large-4 columns">	
+								<label for="email">Email:</label>
+							</div>
+							<div class="small-8 large-8 columns">
+								<input id="email" name="email" placeholder="blah@example.com.au" required="" autofocus="" type="text"/>
+							</div>
+						</div>	
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Feedback</legend>
+					<ul class="no-bullet">
+						<li>
+							<label for="category">Category:</label>
+								<select id="category" required="">
+									<option>Information about Health</option>
+									<option>Information about Fitness</option>
+									<option>Site design/Usability</option>
+									<option>Quality of games</option>
+									<option>Validity of Recipes</option>
+									<option>General complaints</option>
+									<option>Other</option>
+								</select>
+						</li>
+						<li>
+							<label for="comments">Comments:</label>
+								<textarea id="comments" placeholder="Enter your feedback "></textarea>
+						</li>
+					</ul>
+			</fieldset>
+			<div class="row">
+				<div class="small-5 large-5 columns small-centered">
+					<input type="submit" data-reveal-id="submitModal" class="button tiny radius round" value="submit" name="buttonSubmit"/>
+<!-- 					<a href="#" data-reveal-id="submitModal" class="button tiny radius round">Submit</a> -->
+					<input type = "reset" class="button alert tiny radius round" value="reset" name="buttonReset"/>
+				</div>
+			</div>			
+	</form>
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="submitModal" class="reveal-modal tiny" data-reveal>
+	<p> Thankyou for the feedback!</p>
+	<p>We appreciate all comments</p> 
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+			</div>
+		</div>			
+	<!--sideNav section-->		
+		<div class="row">
+			<div class = "small-2 large-2 columns">
+				<div id="sideNav"></div>
+			</div>
+	<!--MAIN CONTENT-->
+			<div class = "small-10 large-10 columns">
+				<div class="row">
+					<div class= "small-7 columns">
+						<div class="row">
+							<h3>Welcome to Step Up!</h3>
+							<p class="lead">At step Up we aim to inspire, so you and your children can have the best possible future!</p>
+						</div>
+						<!--Reveal Modal-->
+						<div class="row">
+							<p class="text-center">
+							<a href="#" data-reveal-id="videoModal" class="label radius">View Our Presentation Video</a>
+						</p>
+						</div>
+				
+						<div class="row">
+							<div class= "small-12 large-12 columns">
+								
+								<h4 class= "subheader">Why Bother?</h4>
+				
+			
+								<article id="semation">
+									<!--information has been sourced from http://www.betterhealth.vic.gov.au/bhcv2/bhcarticles.nsf/pages/Obesity_in_children?open  -->
+
+									<p class="lead">The number of overweight children in Australia has doubled in recent years, with a quarter of children considered overweight or obese. Causes of obesity in children include unhealthy food choices, lack of physical activity and family eating habits. </p>
+
+									<p>This rise in the number of overweight children is disturbing because it causes health problems and can lead to social problems. Overweight children are more likely to be teased by their peers or to develop low self-esteem or body image problems. Once children are overweight, it requires a lot of effort and commitment for them to return to a healthy weight. </p>
+
+									<p>Overweight and obesity in children are among the most important risks to children’s long and short-term health. Overweight children are very likely to become overweight adults. </p>
+
+									<p>Further Information <a href="whyBother.html">here.</a></p>
+
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="small-5 columns">
+						
+{% block body %}
+{% endblock %}
+						<!--Role Models-->
+						<div class="row">
+							<div class="small-12 large-12 columns">
+								<h3 class="aside">Role Models</h3>
+								<div class="row">
+									<div class="small-3 columns">
+										<img src = "/static/img/MagnussenMain2.jpg" alt="Magnusse">
+									</div>
+									<div class="small-9 large-9 columns">
+										<h6 class="subheader"> James Magnuesson</h6>
+										<p>James is one of our most famous role models, having just competed in the London 2012 Olympic games.</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="small-3 columns">
+										<img src = "/static/img/sally-pearson.jpg" alt="Sally Pearson">
+									</div>
+									<div class="small-9 columns">
+										  <h6 class="subheader"> Sally Pearson </h6>
+										<p>Sally Pearson is Australia's best 100m hurdler, and the current world champion.</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="small-4 columns">
+										<img src = "/static/img/greg.jpg" alt="Greg Inglis">
+									</div>
+									<div class="small-8 columns">
+										<h6 class="subheader">Greg Inglis</h6>
+										<p>Greg Inglis is one of the shining stars in the NRL, and plays for the South Sydney Rabbitohs.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>			
+			</div>		
+		</div>
+		<!--Modal Text-->
+		<div id="videoModal" class="reveal-modal medium" data-reveal>
+			<h3>Welcome to StepUp</h3>
+			<div class="flex-video">
+				<!--FIXME Change this to our video don't use iframes they are not HTML5 !!!! -->
+				<iframe width="640" height="360" src="//www.youtube.com/embed/_hUMmPF-L3Y" frameborder="0" allowfullscreen></iframe>		
+			</div>
+		</div>
+{% endblock %}

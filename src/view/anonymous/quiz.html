@@ -1,0 +1,260 @@
+{% extends "anonymous/main.html" %}
+{% block title %}Food Quiz{% endblock %}
+
+{% block body %}
+<!--FOOD QUIZ-->
+<div class="row">
+	<div class="small-12 large-12 columns panel callout radius">
+		<h3 class="aside">Myth Busters</h3>
+		<ul class="no-bullet">
+			<li id="q1">
+				<p class="question">What is the best way to change your child's eating habits?</p>
+				<ul class="answers">
+					<li>	<!--Wrap each input and each label-->
+					<div class="row">
+						<div class="small-2 columns">
+							<input type="radio" name="q1" value="a" id="q1a"> 
+						</div>
+						<div class="small-10 columns">	
+							<label for="q1a">Force feed them healthy food!</label>
+						</div>
+					</div>
+					</li>
+					<li>   
+					<div class="row">	
+						<div class="small-2 columns">	
+							<input type="radio" name="q1" value="b" id="q1b">
+						</div>	
+						<div class="small-10 columns">	
+							<label for="q1b">Start slow, add new foods gradually.</label>
+						</div>	
+					</div>	
+					</li>   
+					<li> 
+					<div class="row">
+						<div class="small-2 columns">
+							<input type="radio" name="q1" value="c" id="q1c">
+						</div>
+						<div class="small-10 columns">	
+							<label for="q1c">Play the "Mother knows best card!"</label>
+						</div>
+					</div>
+					</li>
+					<li> 
+					<div class="row">
+						<div class="small-2 columns">	
+							<input type="radio" name="q1" value="d" id="q1d">
+						</div>	
+						<div class="small-10 columns">	
+							<label for="q1d">Who cares, it's their life anyway.</label>
+						</div>
+					</div>
+					</li>
+				</ul>
+				
+			</li>
+			<li id="q2">
+				<p class="question"> When is it best to start kids exercising?</p> 
+				<ul class="answers">
+					<li>	
+						<div class="small-2 columns">
+							<input type="radio" name="q2" value="a" id="q2a">
+						</div>
+						<div class="small-10 columns">
+							<label for="q2a">The minute they're out of you!</label>
+						</div>	
+					</li>
+					<li> 
+						<div class="small-2 columns">
+							<input type="radio" name="q2" value="b" id="q2b">
+						</div>
+						<div class="small-10 columns">
+							<label for="q2b">Let them just fall into it naturally.</label>
+						</div>	
+					</li>
+					<li>        
+						<div class="small-2 columns">	
+							<input type="radio" name="q2" value="c" id="q2c">
+						</div>
+						<div class="small-10 columns">
+							<label for="q2c"> Start physical play from 1</label>
+						</div>
+					</li>
+					<li>       
+						<div class="small-2 columns">	
+							<input type="radio" name="q2" value="d" id="q2d">
+						</div>
+						<div class="small-10 columns">
+							<label for="q2d">By primary school.</label>
+						</div>		
+					</li>
+				</ul>
+			</li>	
+			<li id="q3">
+				<p class="question">If soft drinks are bad which drink should you drink when water doesn’t quite cut it?</p>  
+				<ul class="answers">
+					<li>
+						<div class="small-2 columns">
+							<input type="radio" name="q3" value="a" id="q3a">
+						</div>
+						<div class="small-10 columns">	
+							<label for="q3a">Fruit Juice</label>
+						</div>
+					</li>
+					<li>         
+						<div class="small-2 columns">	
+							<input type="radio" name="q3" value="b" id="q3b">
+						</div>
+						<div class="small-10 columns">
+							<label for="q3b">Chocolate Milk</label>
+						</div>
+					</li>
+					<li>           
+						<div class="small-2 columns">	
+							<input type="radio" name="q3" value="c" id="q3c">
+						</div>
+						<div class="small-10 columns">	
+							<label for="q3c">Add frozen fruit to water for fun</label>
+						</div>
+					</li>
+					<li>           
+						<div class="small-2 columns">	
+							<input type="radio" name="q3" value="d" id="q3d">
+						</div>
+						<div class="small-10 columns">
+							<label for="q3d">If it's not fizzy it should be ok, right?</label>
+						</div>
+					</li>
+				</ul>
+			</li>	
+			<li id="q4">
+				<p class="question">What is the healthier alternative for an afternoon snack?</p>  
+				<ul class="answers">
+					<li>
+						<div class="small-2 columns">	
+							<input type="radio" name="q4" value="a" id="q4a">
+						</div>
+						<div class="small-10 columns">
+							<label for="q4a">Tiny Teddies</label>
+						</div>
+					</li> 
+					<li>        
+						<div class="small-2 columns">												
+							<input type="radio" name="q4" value="b" id="q4b">
+						</div>
+						<div class="small-10 columns">
+							<label for="q4b">Potatoe Chips</label>
+						<div>
+					</li>    
+					<li>        
+						<div class="small-2 columns">
+							<input type="radio" name="q4" value="c" id="q4c">
+						</div>
+						<div class="small-10 columns">
+							<label for="q4c">Muesli Bars</label>
+						</div>
+					</li>   
+					<li>        
+						<div class="small-2 columns">	
+							<input type="radio" name="q4" value="d" id="q4d">
+						</div>
+						<div class="small-10 columns">
+							<label for="q4d">Vegetable sticks with dip</label>
+						<div>
+					</li>
+				</ul>
+			</li>	
+			<li id="q5">	      
+				<p class="question">Which is the best option</p> 
+				<ul class="answers">
+					<li>
+						<div class="small-2 columns">	
+							<input type="radio" name="q5" value="a" id="q5a">
+						</div>
+						<div class="small-10 columns">
+							<label for="q5a">White bread</label>
+						</div>
+					</li>   
+					<li>        
+						<div class="small-2 columns">	
+							<input type="radio" name="q5" value="b" id="q5b">
+						</div>	
+						<div class="small-10 columns">
+							<label for="q5b">Whole Grain</label>
+						</div>
+					</li>
+					<li>           
+						<div class="small-2 columns">	
+							<input type="radio" name="q5" value="c" id="q5c">
+						</div>
+						<div class="small-10 columns">
+							<label for="q5c">Whole Wheat</label>
+						</div>
+					</li>
+					<li>          
+						<div class="small-2 columns">	
+							<input type="radio" name="q5" value="d" id="q5d">
+						</div>
+						<div class="small-10 columns">
+							<label for="q5d">Sourdough</label>
+						</div>
+					</li>	
+				</ul>
+			</li>	
+			<li id="q6">
+				<p class="question">What should be the largest portion of yor plate?</p>  
+				<ul class="answers">
+					<li>
+						<div class="small-2 columns">														
+							<input type="radio" name="q6" value="a" id="q6a">
+						</div>
+						<div class="small-10 columns">
+							<label for="q6a">vegetables</label>
+						</div>
+					</li>
+					<li>
+						<div class="small-2 columns">
+							<input type="radio" name="q6" value="b" id="q6b">
+						</div>
+						<div class="small-10 columns">
+							<label for="q6b">Fruit</label>
+						</div>
+					</li>
+					<li>           
+						<div class="small-2 columns">
+							<input type="radio" name="q6" value="c" id="q6c">
+						</div>	
+						<div class="small-10 columns">
+							<label for="q6c">Protein</label>
+						</div>
+					</li>
+					<li>    
+						<div class="small-2 columns">
+							<input type="radio" name="q6" value="d" id="q6d">
+						</div>
+						<div class="small-10 columns">
+							<label for="q6d">Dairy</label>
+						</div>
+					</li>	
+				</ul>
+			</li>
+		</ul>
+		<div class="row">
+			<div class="small-12 small-centered columns">
+				<div class="row">
+					<div class="small-8 small-centered columns">
+						<input type="button" class="button tiny radius round success" id="submit" value="Submit"/>
+						<input type="button" class="button tiny radius round alert" id="next" value="Next"/>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="small-12 small-centered columns">
+				<div  id="response"></div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
